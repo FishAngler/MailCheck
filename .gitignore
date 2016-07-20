@@ -1,0 +1,7 @@
+*.userprefs
+packages
+bin/
+obj/
+Components/
+.vs/
+.DS_Store
