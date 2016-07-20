@@ -6,6 +6,8 @@
  * Released under the MIT License.
  *
  * v 1.0.0
+ * 
+ * C# Adaptation of https://github.com/mailcheck/mailcheck
  */
 
 namespace FishAngler.MailCheck

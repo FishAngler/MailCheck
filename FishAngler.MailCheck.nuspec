@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>FishAngler.MailCheck</id>
+        <version>1.0.0</version>
+        <authors>jstawski</authors>
+        <projectUrl>https://github.com/FishAngler/MailCheck</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A PCL Library that suggests a right domain when your users misspell it in an email address.</description>
+    </metadata>
+    <files>
+        <file src="FishAngler.MailCheck\bin\Release\FishAngler.MailCheck.dll" target="lib\FishAngler.MailCheck.dll" />
+    </files>
+</package>

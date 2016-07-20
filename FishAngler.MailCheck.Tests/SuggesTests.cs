@@ -6,6 +6,8 @@
  * Released under the MIT License.
  *
  * v 1.0.0
+ * 
+ * C# Adaptation of https://github.com/mailcheck/mailcheck
  */
 
 using NUnit.Framework;
@@ -58,14 +60,13 @@ namespace FishAngler.MailCheck.Tests
             Assert.IsNull(suggestion);
         }
 
-        [ExpectedException(typeof(ArgumentException))]
         [TestCase("")]
         [TestCase(null)]
         [TestCase("test")]
         [TestCase("test@")]
         public void it_should_throw_invalid_argument_exception_when_there_is_invalid_email(string email)
         {
-            check.Suggest(email);
+            Assert.Throws<ArgumentException>(() => check.Suggest(email));
         }
 
         [Test]

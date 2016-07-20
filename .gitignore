@@ -5,3 +5,4 @@ obj/
 Components/
 .vs/
 .DS_Store
+*.nupkg

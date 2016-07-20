@@ -6,6 +6,8 @@
  * Released under the MIT License.
  *
  * v 1.0.0
+ * 
+ * C# Adaptation of https://github.com/mailcheck/mailcheck
  */
 
 using System;
@@ -14,7 +16,7 @@ using System.Text.RegularExpressions;
 
 namespace FishAngler.MailCheck
 {
-    public class MailCheck
+    public class MailCheck : IMailCheck
     {
         static int domainThreshold = 2, secondLevelThreshold = 2, topLevelThreshold = 2;
 

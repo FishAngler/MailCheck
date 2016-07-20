@@ -12,11 +12,9 @@
 
 namespace FishAngler.MailCheck
 {
-    public class EmailSuggestion
+    public interface IMailCheck
     {
-        public string Address { get; set; }
-        public string Domain { get; set; }
-        public string Full { get; set; }
+        EmailSuggestion Suggest(string email);
+        EmailComposition SplitEmail(string email);
     }
 }
-
